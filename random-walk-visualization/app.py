@@ -2,9 +2,7 @@ import matplotlib.pyplot as plt
 import random
 import gradio as gr
 import numpy as np
-
-# seed = random.randint(1, 1000)
-# random.seed(seed)
+import pandas as pd
 
 def generate_random_walk(iters, step_size = 1, random_seed = None):
     # random.seed(random_seed)
@@ -14,7 +12,11 @@ def generate_random_walk(iters, step_size = 1, random_seed = None):
 
     if random_seed is None:
         random_seed = random.randint(1, 100000)
-        
+    else:
+        random_seed = random_seed
+
+    random.seed(random_seed)
+    
     def distance_from_start(final_coord, start_coord, round_to=2):
         return round(np.sqrt((final_coord[0] - start_coord[0])**2 + (final_coord[1] - start_coord[1])**2), round_to)
     
@@ -41,6 +43,9 @@ def generate_random_walk(iters, step_size = 1, random_seed = None):
     
     x = [i[0] for i in coordinate_list]
     y = [i[1] for i in coordinate_list]
+    df = pd.DataFrame({'x':x,'y':y})
+    csv_file = "2d_random_walk_coordinates.csv"
+    df.to_csv(csv_file, index=False)
     
     fig, ax = plt.subplots(1)
     
@@ -68,11 +73,13 @@ def generate_random_walk(iters, step_size = 1, random_seed = None):
     
     fig.canvas.draw()
     image_array = np.array(fig.canvas.renderer.buffer_rgba())
-    return image_array
+
+    
+    return image_array, csv_file
 
 iters = gr.Number(value=1e5,label="How many random steps?")
 step_size = gr.Number(value=1,label="Step size")
 random_seed = gr.Number(value=42,label="Random seed (Delete it to go full random mode)")
     
-iface = gr.Interface(fn=generate_random_walk, inputs=[iters, step_size, random_seed], outputs="image", title="2-D Random Walk Plot", description="Steps along NEWS directions only")
+iface = gr.Interface(fn=generate_random_walk, inputs=[iters, step_size, random_seed], outputs=["image","file"], title="2-D Random Walk", description="Uniform steps along NEWS directions only")
 iface.launch()
