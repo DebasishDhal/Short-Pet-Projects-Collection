@@ -13,4 +13,17 @@ Web-App that does 2D random walk-visualization for 1 agent, alongside providing 
 
 Use it at this site : - https://huggingface.co/spaces/DebasishDhal99/Random-Walk-Visualization
 
+Example: -
+
+- Random walk by a single particle, with statistics.
+<p align="center">
+  <img src="images/single_particle.png" alt="">
+</p>
+
+- Random walk by many particles.
+<p align="center">
+  <img src="images/multi_particle.png" alt="">
+</p>
+
+
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
