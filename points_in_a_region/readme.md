@@ -1,0 +1,1 @@
+I'm not yet sure what I want from this but it's sort of like, put few random points in a region, then try to put another set of points in that region, so that the distance between the two sets of points would be the maximum.
