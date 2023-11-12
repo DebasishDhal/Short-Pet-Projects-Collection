@@ -6,13 +6,13 @@ def distance_func(point1, point2):
     distance = mt.dist(point1,point2)
     return distance
 
-def average_distance(point, array):
+def average_distance(point, array): #Returns the average distance of points (e.g. [1,2]) from all the points in array.
     distance = 0
     for i in range(len(array)):
         distance += distance_func(point,array[i])
     return distance/len(array)
 
-def average_dist_func(points_count):
+def average_dist_func(points_count): #Ths square region is divided into many grids and average distance is calcualted for each such grid. This is then used for mapping the avg. dist.
 
     x_list = []
     y_list = []
