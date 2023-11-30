@@ -4,13 +4,13 @@ def individual_channel_image(img_arr, channel= 'r', ax=None):
   img_arr = img_arr[:,:,0:3]
   
   if channel in ['r','red','Red']:
-    plot_arr = img_arr[:,:,0]
+    plot_arr = img_arr[:,:,2]
     channel_name = 'Red'
   if channel in ['g','green','Green']:
     plot_arr = img_arr[:,:,1]
     channel_name = 'Green'
   if channel in ['b','blue','Blue']:
-    plot_arr = img_arr[:,:,2]
+    plot_arr = img_arr[:,:,0]
     channel_name = 'Blue'
 
   if ax is None:
