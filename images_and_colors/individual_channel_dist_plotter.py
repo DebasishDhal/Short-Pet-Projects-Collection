@@ -4,7 +4,7 @@ def channel_distribution_plotter(img_array):
     img_array = img_array[:,:,:3] #Not considering the A channel, if it's a RGBA image.
 
     plt.subplot(2,2,1)
-    plt.hist(img_array[:,:,0].ravel(),bins=256,color='red');
+    plt.hist(img_array[:,:,2].ravel(),bins=256,color='red');
     plt.title("Red Channel")
 
     plt.subplot(2,2,2)
@@ -12,7 +12,7 @@ def channel_distribution_plotter(img_array):
     plt.title("Green Channel")
 
     plt.subplot(2,2,3)
-    plt.hist(img_array[:,:,2].ravel(),bins=256,color='blue');
+    plt.hist(img_array[:,:,1].ravel(),bins=256,color='blue');
     plt.title("Blue Channel")
 
     plt.subplot(2,2,4)
