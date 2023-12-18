@@ -2,7 +2,7 @@ I started Leetcode in 2023. I want to have a track of how my rank changes with t
 
 Leetcode provides a rank vs time graph, but I want to make something myself.
 
-Hell yeah, it's working. Now, I need to test if the system is off during the scheduled time.
+Hell yeah, it's working. Now, I need to check what happens, if the system is off during the scheduled time.
 
 The end-to-end thing contains three components
 
