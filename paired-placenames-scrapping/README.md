@@ -9,3 +9,4 @@ Dataset - https://huggingface.co/datasets/DebasishDhal99/German-Names-Middle-And
 - If I find two german names for a place name, I keep the german name that is more similar to its corresponding X language. Same goes for the other way around.
 - German-Slovak dataset - I've done less than 5 manual edits in the csv file after creating them.
 - German-Czech dataset - Around 50 manual edits done by me in the csv file.
+- German-Slovene dataset - Around 20 manual edits done by me in the csv file.
