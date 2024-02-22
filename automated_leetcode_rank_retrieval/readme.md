@@ -17,3 +17,6 @@ The end-to-end thing contains three components
 <p align='center'>
   <img src = "images/rank_graph.png">
 </p>
+
+And this stupid code betrayed me. There was some error and it wiped out 2 months of rank-tracking. Will be careful with data-writing next time. Here's the latest version I had plotted.
+![image](https://github.com/DebasishDhal/Short-Pet-Projects-Collection/assets/31160148/6a2f4442-a81d-4cb8-808a-13edd4ed8493)
