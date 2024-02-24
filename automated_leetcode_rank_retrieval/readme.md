@@ -20,3 +20,6 @@ The end-to-end thing contains three components
 
 And this stupid code betrayed me. There was some error and it wiped out 2 months of rank-tracking. Will be careful with data-writing next time. Here's the latest version I had plotted.
 ![image](https://github.com/DebasishDhal/Short-Pet-Projects-Collection/assets/31160148/6a2f4442-a81d-4cb8-808a-13edd4ed8493)
+*******************************************
+- Restored 65% of the data, but the rest seem lost forever. Mostly data of first half of February. Better than losing it all, but still a loss.
+- A good lesson for me, to put additional checks, especially if we're writing a file from scratch. I've modified the retrieval script, will try it and update.
