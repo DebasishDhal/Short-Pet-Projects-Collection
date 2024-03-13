@@ -23,3 +23,5 @@ And this stupid code betrayed me. There was some error and it wiped out 2 months
 *******************************************
 - Restored 65% of the data, but the rest seem lost forever. Mostly data of first half of February. Better than losing it all, but still a loss.
 - A good lesson for me, to put additional checks, especially if we're writing a file from scratch. I've modified the retrieval script, will try it and update.
+
+- This code is not working anymore. Leetcode has apparently updated its policy, and now I can't scrap content from Leetcode anymore. It's likely the same for all, since I'm facing the same problem in my own system and on Colab as well. 
